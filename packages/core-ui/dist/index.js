@@ -1,6 +1,6 @@
 var React = require('react');
 
-var styles = {"test":"_3ybTi"};
+var styles = {};
 
 var ExampleComponent = function ExampleComponent(_ref) {
   var text = _ref.text;
@@ -8,6 +8,21 @@ var ExampleComponent = function ExampleComponent(_ref) {
     className: styles.test
   }, "Example Component: ", text);
 };
+var buttonStyle = {
+  padding: '10px 50px'
+};
+var Button = function Button(props) {
+  return React.createElement("button", {
+    className: 'btn btn-default',
+    style: buttonStyle,
+    onClick: props.handleClick
+  }, "Long", props.children);
+};
+Button.defaultProps = {
+  onClick: function onClick() {},
+  label: ''
+};
 
+exports.Button = Button;
 exports.ExampleComponent = ExampleComponent;
 //# sourceMappingURL=index.js.map

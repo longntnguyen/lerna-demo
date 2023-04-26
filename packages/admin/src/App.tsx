@@ -1,8 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Button } from "ui-components";
-
+import { Button } from "core-ui";
 function App() {
   return (
     <div className="App">
@@ -17,9 +16,8 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          <Button>Dragon</Button>
         </a>
-        <Button>Edit</Button>
       </header>
     </div>
   );

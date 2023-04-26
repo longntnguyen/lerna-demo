@@ -1,5 +1,5 @@
 import * as React from 'react'
-import styles from './styles.module.css'
+import styles from './button.module.css'
 
 interface Props {
   text: string
@@ -10,7 +10,7 @@ export const ExampleComponent = ({ text }: Props) => {
 }
 
 const buttonStyle = {
-  padding: '10px 20px'
+  padding: '10px 50px'
 }
 
 export const Button = (props: any) => {

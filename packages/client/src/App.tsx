@@ -1,7 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from "react";
+import logo from "./logo.svg";
+import { Button } from "core-ui";
 
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-       
+          <Button>Edit</Button>
         </a>
       </header>
     </div>
