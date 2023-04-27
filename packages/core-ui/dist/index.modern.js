@@ -1,13 +1,7 @@
 import { createElement } from 'react';
 
-var styles = {};
+var styles = {"test":"_3ybTi"};
 
-var ExampleComponent = function ExampleComponent(_ref) {
-  var text = _ref.text;
-  return createElement("div", {
-    className: styles.test
-  }, "Example Component: ", text);
-};
 var buttonStyle = {
   padding: '10px 50px'
 };
@@ -21,6 +15,13 @@ var Button = function Button(props) {
 Button.defaultProps = {
   onClick: function onClick() {},
   label: ''
+};
+
+var ExampleComponent = function ExampleComponent(_ref) {
+  var text = _ref.text;
+  return createElement("div", {
+    className: styles.test
+  }, "Example Component: ", text);
 };
 
 export { Button, ExampleComponent };
